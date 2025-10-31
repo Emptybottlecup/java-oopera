@@ -1,9 +1,9 @@
 package OperaClasses.CharactersClasses;
 
 class Person {
-    private final String name;
-    private final String surName;
-    private final Gender gender;
+    protected final String name;
+    protected final String surName;
+    protected final Gender gender;
 
     public Person(Gender gender, String name, String surName) {
         this.gender = gender;
@@ -21,5 +21,13 @@ class Person {
 
     public String getSurName() {
         return surName;
+    }
+
+    @Override
+    public String toString() {
+        return "Director{" +
+                "name=" + name + ", " +
+                "surName=" + surName +
+                '}';
     }
 }

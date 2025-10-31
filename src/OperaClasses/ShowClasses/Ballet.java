@@ -1,9 +1,6 @@
 package OperaClasses.ShowClasses;
 
-import OperaClasses.CharactersClasses.Actor;
 import OperaClasses.CharactersClasses.Director;
-
-import java.util.ArrayList;
 
 public class Ballet extends MusicalShow {
     private final String choreographer;

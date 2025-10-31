@@ -1,16 +1,12 @@
 package OperaClasses.ShowClasses;
 
-import OperaClasses.CharactersClasses.Actor;
 import OperaClasses.CharactersClasses.Director;
-
-import java.util.ArrayList;
 
 class MusicalShow extends Show {
     private final String musicAuthor;
     private final String librettoText;
 
-    public MusicalShow(Director director, String title, int duration, String musicAuthor,
-                       String librettoText) {
+    public MusicalShow(Director director, String title, int duration, String musicAuthor, String librettoText) {
         super(director, title, duration);
 
         this.librettoText = librettoText;
@@ -18,7 +14,7 @@ class MusicalShow extends Show {
     }
 
     public void printLibretto() {
-        System.out.println(getLibrettoText());
+        System.out.println(librettoText);
     }
 
     public String getLibrettoText() {

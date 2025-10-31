@@ -6,12 +6,12 @@ import OperaClasses.CharactersClasses.Director;
 import java.util.ArrayList;
 
 public class Show {
-    private final String title;
-    private final int duration;
-    private final Director director;
-    private ArrayList<Actor> listOfActors;
+    protected final String title;
+    protected final int duration;
+    protected final Director director;
+    protected ArrayList<Actor> listOfActors;
 
-    public Show (Director director, String title, int duration) {
+    public Show(Director director, String title, int duration) {
         this.director = director;
         this.title = title;
         this.duration = duration;
@@ -22,8 +22,8 @@ public class Show {
         if (listOfActors.contains(newActor)) {
             System.out.println("Данный актер уже присутствует в группе.");
         } else {
-            System.out.println("Актер успешно добавлен.");
             listOfActors.add(newActor);
+            System.out.println("Актер успешно добавлен.");
         }
     }
 
@@ -46,6 +46,10 @@ public class Show {
 
     public void printActors() {
         System.out.println(listOfActors);
+    }
+
+    public void printDirector() {
+        System.out.println(director);
     }
 
     public Director getDirector() {
