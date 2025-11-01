@@ -16,7 +16,7 @@ public class Actor extends Person {
 
     @Override
     public int hashCode() {
-        return Objects.hash(height, getName(), getSurName());
+        return Objects.hash(height, name, surName);
     }
 
     @Override
@@ -27,17 +27,12 @@ public class Actor extends Person {
 
         Actor compareActor = (Actor) obj;
 
-        return compareActor.getName().equals(this.getName()) && compareActor.getSurName().equals(this.getSurName()) &&
-                (compareActor.getHeight() == height);
+        return compareActor.getName().equals(name) && compareActor.getSurName().equals(surName) && (compareActor.getHeight() == height);
     }
 
     @Override
     public String toString() {
-        return "Actor{" +
-                "name=" + name + ", " +
-                "surName=" + surName + ", " +
-                "height=(" + height + ')' +
-                '}';
+        return "Actor{" + super.toString() + ", " + "height=(" + height + ')' + '}';
     }
 
 }

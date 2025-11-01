@@ -25,9 +25,6 @@ class Person {
 
     @Override
     public String toString() {
-        return "Director{" +
-                "name=" + name + ", " +
-                "surName=" + surName +
-                '}';
+        return "name=" + name + ", " + "surName=" + surName;
     }
 }
